@@ -15,8 +15,8 @@ If you have a project on your computer and you just created an empty Git reposit
     cd <directory>
     git init
     git remote add origin https://github.com/you/repo
-    git add -A
-    git commit -a -m "Message"
+    git add .
+    git commit -am "Message"
     git push origin master
 
 ### Download all files from Git repository to a local directory
@@ -52,7 +52,7 @@ Similar to above, but if you've added a .gitignore with a lot of changes.
 
     git rm -r --cached .
     git add .
-    git commit -a -m "Message"
+    git commit -am "Message"
 
 ### Create a Project Page with GitHub Pages
 
@@ -63,7 +63,7 @@ Commit and push all local changes to your existing repo.
 Create your project page in a directory, like **project** or **dist**, that includes an `index.html`. I'll use **dist** for an example.
 
     git add dist
-    git commit -m "Create GitHub Page"
+    git commit -am "Create GitHub Page"
     git subtree push -prefix dist origin gh-pages
 
 Now `http://you.github.io/repo` will be the website you've created for your project. 

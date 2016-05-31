@@ -77,3 +77,8 @@ If the gh-pages branch already existed, because you tried to do it the way the d
 When you really want your local repository to override the remote.
 
     git push -f origin master
+    
+### Override Local Changes
+
+    git fetch --all
+    git reset --hard origin/master

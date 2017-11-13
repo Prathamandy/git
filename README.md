@@ -113,3 +113,11 @@ Merge back into your branch.
     git merge -s ours master
     git checkout master
     git merge <branch>
+    
+# Remove All Local Branches Except Master
+
+    git branch | grep -v "master" | xargs git branch -D
+    
+More than one branch may be added to the grep. To remove all local branches except "master" and "develop":
+
+    git branch | grep -v "master\|develop" | xargs git branch -D

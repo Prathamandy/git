@@ -121,3 +121,13 @@ Merge back into your branch.
 More than one branch may be added to the grep. To remove all local branches except "master" and "develop":
 
     git branch | grep -v "master\|develop" | xargs git branch -D
+    
+ # Allow Empty Commit 
+ 
+ Fix the problem of git hooks claiming everything is "Up-to-date".
+ 
+ ```
+ git push production master
+ git commit --allow-empty -m 'push to execute post-receive'
+ git push production master
+ ```

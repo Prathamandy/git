@@ -131,3 +131,12 @@ More than one branch may be added to the grep. To remove all local branches exce
  git commit --allow-empty -m 'push to execute post-receive'
  git push production master
  ```
+ 
+ # Merge new-feature branch into master
+
+```
+git checkout master
+git pull origin master
+git merge new-feature
+git push origin master
+```

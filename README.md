@@ -180,3 +180,10 @@ git pull origin master
 git merge new-feature
 git push origin master
 ```
+
+## Switch to branch that exists on orgigin
+
+```
+git fetch
+git checkout other-branch
+```

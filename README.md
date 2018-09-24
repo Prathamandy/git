@@ -183,7 +183,14 @@ git push origin master
 
 ## Switch to branch that exists on orgigin
 
-```
+```bash
 git fetch
 git checkout other-branch
+```
+
+## Fetch branch from origin
+
+```bash
+git fetch origin
+git checkout --track origin/<remote_branch_name>
 ```

@@ -194,3 +194,9 @@ git checkout other-branch
 git fetch origin
 git checkout --track origin/<remote_branch_name>
 ```
+
+## Accept all incoming changes
+
+```
+git pull -Xtheirs
+```

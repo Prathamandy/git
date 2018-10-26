@@ -200,3 +200,12 @@ git checkout --track origin/<remote_branch_name>
 ```
 git pull -Xtheirs
 ```
+
+## Rebase from develop
+
+```
+git fetch --prune --all
+git rebase origin/develop
+git pull
+git push
+```

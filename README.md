@@ -209,3 +209,13 @@ git rebase origin/develop
 git pull
 git push
 ```
+
+## Stashing
+
+Put your changes away and switch to another branch
+
+```
+git stash
+git checkout -b new-branch
+git stash pop
+```

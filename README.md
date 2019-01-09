@@ -197,3 +197,11 @@ git stash
 git checkout -b new-branch
 git stash pop
 ```
+
+## Accidentally committed to develop and want to move that commit to a branch
+
+```
+git branch new-branch
+git reset HEAD~1
+git checkout <files>
+```

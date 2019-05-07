@@ -205,3 +205,11 @@ git branch new-branch
 git reset HEAD~1
 git checkout <files>
 ```
+
+## GitHub pages to non-docs folder
+
+"dist" or whatever you want.
+
+```
+git subtree push --prefix dist origin gh-pages
+```

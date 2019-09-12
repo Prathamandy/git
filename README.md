@@ -167,13 +167,13 @@ git checkout --track origin/<remote_branch_name>
 
 ## Accept all incoming changes
 
-```
+```bash
 git pull -Xtheirs
 ```
 
 ## Rebase from develop
 
-```
+```bash
 git fetch --prune --all
 git rebase origin/develop
 git pull
@@ -184,7 +184,7 @@ git push
 
 Put your changes away and switch to another branch
 
-```
+```bash
 git stash
 git checkout -b new-branch
 git stash pop
@@ -192,7 +192,7 @@ git stash pop
 
 ## Accidentally committed to develop and want to move that commit to a branch
 
-```
+```bash
 git branch new-branch
 git reset HEAD~1
 git checkout <files>
@@ -202,10 +202,17 @@ git checkout <files>
 
 "dist" or whatever you want.
 
-```
+```bash
 git subtree push --prefix dist origin gh-pages
 ```
 
+## Subtree within repo
+
+```bash
+git subtree add --prefix <repo> https://github.com/taniarascia/<repo> master --squash
+git subtree pull --prefix <repo> https://github.com/taniarascia/<repo> master --squash
+git subtree push --prefix <repo> https://github.com/taniarascia/<repo> master --squash
+```
 
 ## Exiting VIM
 

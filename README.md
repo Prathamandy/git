@@ -1,14 +1,4 @@
-# Useful Git Commands
-
-## Exiting VIM
-
-For those new to command line, ending up at the commit message screen (often when you forget to the add `-m` flag to a commit) is confusing because pressing escape (or `CTRL` + `C`) does not exit the screen, as the default editor for Git is VIM. Instead, press escape (if you've started attempting to type something) and type the following command:
-
-```bash
-:q
-```
-
-And press enter, and you'll return to where you were.
+# Git
 
 ## Upload all files in a local directory to a new Git repository
 
@@ -213,3 +203,14 @@ git checkout <files>
 ```
 git subtree push --prefix dist origin gh-pages
 ```
+
+
+## Exiting VIM
+
+For those new to command line, ending up at the commit message screen (often when you forget to the add `-m` flag to a commit) is confusing because pressing escape (or `CTRL` + `C`) does not exit the screen, as the default editor for Git is VIM. Instead, press escape (if you've started attempting to type something) and type the following command:
+
+```bash
+:q
+```
+
+And press enter, and you'll return to where you were.

@@ -1,5 +1,7 @@
 # Git
 
+Git command reference.
+
 ## Upload all files in a local directory to a new Git repository
 
 If you have a project on your computer and you just created an empty Git repository in GitHub, use these commands to upload everything to Git.

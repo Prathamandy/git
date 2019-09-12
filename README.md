@@ -209,9 +209,9 @@ git subtree push --prefix dist origin gh-pages
 ## Subtree within repo
 
 ```bash
-git subtree add --prefix <repo> https://github.com/taniarascia/<repo> master --squash
-git subtree pull --prefix <repo> https://github.com/taniarascia/<repo> master --squash
-git subtree push --prefix <repo> https://github.com/taniarascia/<repo> master --squash
+git subtree add --prefix <local-dir> https://github.com/taniarascia/<repo> master --squash
+git subtree pull --prefix <local-dir> https://github.com/taniarascia/<repo> master --squash
+git subtree push --prefix <local-dir> https://github.com/taniarascia/<repo> master --squash
 ```
 
 ## Exiting VIM

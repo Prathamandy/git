@@ -1,6 +1,6 @@
 # Git
 
-Git command reference.
+Git command reference craeted by some person on github.
 
 ## Upload all files in a local directory to a new Git repository
 
